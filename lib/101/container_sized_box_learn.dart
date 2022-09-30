@@ -25,13 +25,19 @@ class ContainerSizedBox extends StatelessWidget {
                   maxHeight: 100, minWidth: 20, maxWidth: 150),
               child: Text('a' * 100),
               padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                gradient:  const LinearGradient(colors: [(Color.fromARGB(150,46,158,68)),Colors.blue],),
-
-              ),
-            )
+              decoration: creatBox(),
+            ),
           ],
         ));
   }
+}
+
+class creatBox extends BoxDecoration {
+  creatBox()
+      : super(
+          borderRadius: BorderRadius.circular(20),
+          gradient: const LinearGradient(
+            colors: [(Color.fromARGB(150, 46, 158, 68)), Colors.blue],
+          ),
+        );
 }
