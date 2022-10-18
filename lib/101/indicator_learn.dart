@@ -7,7 +7,7 @@ class IndicatorLearn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [CenterCircularProgres()],
+        actions: const [CenterCircularProgres()],
       ),
       body: const Center(
         child: CenterCircularProgres(),
@@ -23,7 +23,7 @@ class CenterCircularProgres extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: CircularProgressIndicator(),
     );
   }

@@ -16,7 +16,7 @@ class CustomWidgetLearn extends StatelessWidget {
             title: title,
             onPressed: () {},
           )),
-          SizedBox(height: 200),
+          const SizedBox(height: 200),
           Column(
             children: [
               Center(

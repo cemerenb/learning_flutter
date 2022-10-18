@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:temel_widget/101/custom_widget_learn.dart';
-import 'package:temel_widget/101/indicator_learn.dart';
-import 'package:temel_widget/101/list_tile_learn.dart';
+import 'package:temel_widget/101/column_row_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData.dark().copyWith(
         listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
-        progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.white),
+        progressIndicatorTheme:
+            const ProgressIndicatorThemeData(color: Colors.white),
         appBarTheme: const AppBarTheme(
           centerTitle: true,
           backgroundColor: Colors.transparent,
@@ -28,7 +27,8 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.system,
       theme: ThemeData.light().copyWith(
-        progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.white),
+        progressIndicatorTheme:
+            const ProgressIndicatorThemeData(color: Colors.white),
         listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
         appBarTheme: const AppBarTheme(
           centerTitle: true,
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const ListTileLearn(),
+      home: const ColumnRowLearn(),
     );
   }
 }

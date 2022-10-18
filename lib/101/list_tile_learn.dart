@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:temel_widget/core/random_image.dart';
 
 class ListTileLearn extends StatelessWidget {
   const ListTileLearn({Key? key}) : super(key: key);
-  final imageUrl = "https://picsum.photos/200";
 
   @override
   Widget build(BuildContext context) {
@@ -11,18 +11,17 @@ class ListTileLearn extends StatelessWidget {
       body: Column(children: [
         Card(
           child: ListTile(
-            title: Text('My Card'),
-            dense: false,
+            title: const Text('My Card'),
+            dense: true,
             onTap: () {},
-            subtitle: Text('How do you use your card'),
+            subtitle: const Text('How do you use your card'),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 5),
             leading: ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: Image.network(
-                imageUrl,
-                fit: BoxFit.cover,
-              ),
+              // ignore: prefer_const_constructors
+              child: RandomImage(),
             ),
-            trailing: Icon(Icons.chevron_right),
+            trailing: const Icon(Icons.chevron_right),
           ),
         )
       ]),
