@@ -32,6 +32,7 @@ class ContainerSizedBox extends StatelessWidget {
   }
 }
 
+// ignore: camel_case_types
 class creatBox extends BoxDecoration {
   creatBox()
       : super(

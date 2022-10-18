@@ -40,8 +40,8 @@ class ButtonLearn extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(20)))),
             onPressed: () {},
             child: Padding(
-              padding:
-                  EdgeInsets.only(top: 20, bottom: 20, right: 40, left: 40),
+              padding: const EdgeInsets.only(
+                  top: 20, bottom: 20, right: 40, left: 40),
               child: Text(
                 'Place Bid',
                 style: Theme.of(context).textTheme.headline6,

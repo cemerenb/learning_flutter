@@ -20,16 +20,16 @@ class TextLearn extends StatelessWidget {
             .headline4
             ?.copyWith(color: ProjectColor.welcomeColor),
       ),
-                  Text(
-                    (ProjectKeys().welcome + ' $name ${name.length}'),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.right,
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4
-                        ?.copyWith(color: ProjectColor.welcomeColor),
-                  ),
+      Text(
+        (ProjectKeys().welcome + ' $name ${name.length}'),
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+        textAlign: TextAlign.right,
+        style: Theme.of(context)
+            .textTheme
+            .headline4
+            ?.copyWith(color: ProjectColor.welcomeColor),
+      ),
     ])));
   }
 }

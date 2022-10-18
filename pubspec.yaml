@@ -88,4 +88,4 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
-    - images/thumb_400.jpg
+    - assets/book.png

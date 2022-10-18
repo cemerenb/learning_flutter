@@ -30,5 +30,5 @@ class IconSize {
 }
 
 class IconColors {
-  final Color violet = Color(0xff9A3FEE);
+  final Color violet = const Color(0xff9A3FEE);
 }
