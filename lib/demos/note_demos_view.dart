@@ -57,8 +57,8 @@ class ButtonHeights {
 class _SubtitleWidget extends StatelessWidget {
   const _SubtitleWidget({
     Key? key,
-    this.textAlign = TextAlign.center,
-    required this.p1,
+    // ignore: unused_element
+    required this.p1, this.textAlign,
   }) : super(key: key);
   final TextAlign? textAlign;
   final String p1;

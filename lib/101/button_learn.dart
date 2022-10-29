@@ -35,7 +35,7 @@ class ButtonLearn extends StatelessWidget {
           const SizedBox(height: 10),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-                primary: Colors.black,
+                backgroundColor: Colors.black,
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)))),
             onPressed: () {},
